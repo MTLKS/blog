@@ -1,0 +1,27 @@
+{% macro header(components, is_page) %}
+<div class="sticky top-0 bg-neutral-200 dark:bg-neutral-800">
+    <div class="container mx-auto flex place-content-between
+        py-16 lg:py-8 font-sans text-6xl lg:text-2xl text-neutral-900
+        dark:text-neutral-300">
+        <div class="flex">
+            <div class="m-0 p-0 text-neutral-700 dark:text-neutral-200">
+                <a href="/">/mtlks.log</a>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div id="back-to-top" class="hidden cursor-pointer">
+                <i class="las la-level-up-alt"></i>
+            </div>
+            <a href="/"><i class="las la-home"></i></a>
+            <div id="darkmode-toggle" class="cursor-pointer">
+                <div class="hidden dark:inline">
+                    <i class="las la-sun"></i>
+                </div>
+                <div class="inline dark:hidden">
+                    <i class="las la-moon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro head %}
